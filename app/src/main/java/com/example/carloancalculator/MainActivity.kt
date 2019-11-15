@@ -22,11 +22,18 @@ class MainActivity : AppCompatActivity() {
 
             textViewLoan.text = "Loan: " + "%.2f".format(Loan)
             textViewInterest.text = "Interest: " + "%.2f".format(Interest)
-            textViewMonthlyRepayment.text = "Monthly Payment: " + "%.2f".format(MonthlyRepayment)
+            textViewMonthlyRepayment.text = "Monthly Repayment: " + "%.2f".format(MonthlyRepayment)
         }
 
         buttonReset.setOnClickListener(){
+            editTextCarPrice.text.clear()
+            editTextDownPayment.text.clear()
+            editTextInterestRate.text.clear()
+            editTextLoanPeriod.text.clear()
 
+            textViewLoan.setText("Loan :")
+            textViewInterest.setText("Interest :")
+            textViewMonthlyRepayment.setText("Monthly Repayment :")
         }
     }
 }
